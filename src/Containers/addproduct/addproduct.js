@@ -15,9 +15,6 @@ class Addproduct extends Component{
         pic:'https://www.lifewire.com/thmb/yLFRNBmwLcKDRnkaZ0B0nXgLAQM=/960x640/filters:no_upscale():max_bytes(150000):strip_icc()/upload-2c485b5b6fef41f39a05afb9adfce03e.png'
     }
 
-    upi=()=>{
-        alert('upload pdt img')
-    }
     handleSubmit=(e)=>{
         e.preventDefault()
         if(this.props.pdtnameField && this.props.descField && this.props.dateField && this.props.unitsField)
@@ -136,7 +133,7 @@ class Addproduct extends Component{
                         <img className="upload-img" src={this.state.pic}/>
                         <div>
                             <input id="fileInput" type="file" accept='image/*' className="pdt-choose-file" onChange={(e)=>this.onPicUpload(e)}></input>
-                            <input type="button" className="upload-btn" value="UPLOAD PRODUCT IMAGE" onClick={this.upi}></input>
+                            <input type="button" className="upload-btn" value="UPLOAD PRODUCT IMAGE"></input>
                         </div>
                     </div>
                 </div>
